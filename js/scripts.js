@@ -2,35 +2,38 @@
 
 var vowels = ["a", "e", "i", "o", "u"];
 
+function firstLetter(string){
+  var firstLetter = string.charAt(0);
+  return first-letter;
+  console.log(first-letter)
+}
 
+function way(string){
+  if (first-letter === (/([vowels])/gi)){
+    return true;
+  }
+}
 
+function translate(string) {
+  if(way === true){
 
-
-
-
+    
+  }
+}
+  
 // UI LOGIC
 
 $(document).ready(function() {
   $("#piglatin").submit(function(event){
     event.preventDefault();
-    var input = $("#sentence").val();
+    $("result").hide()
+    var string = $("#sentence").val();
     
     
-    var translate = function(input) {
-        $("#result").append(input + "way");
-    }
-    console.log(input)
-    translate(input);
+    console.log(string)
     $("#result").show()
   })
 });
 
 
-// vowels.forEach(function(vowels){
-//   vowelIndex = input.indexOf("a")
-//   if (vowelIndex = 0) {
-//     input.append("way");
-//   console.log(vowelIndex);
-//   }
-//   debugger;
-// });
+// $("#result").append(string + "way");
