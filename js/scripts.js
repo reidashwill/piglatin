@@ -1,12 +1,17 @@
 //BACK END LOGIC
 
-output = []
+output = [""]
 
 function pigLatin(string){
   var firstLetter = string.charAt(0);
+  var firstConsonant = string.charAt(1);
   
-  if(firstLetter.match(/[aeiou]/g)){
-    output.push(string + "way")
+  if(firstLetter.match(/[aeiou]/g)) {
+    output.push(string + "way");
+  }else if(firstConsonant.match(/[bcdfghjklmnpqrstvwxyz]/g)) {
+    newString = string.slice(1, str.length-1)
+    output.push(newString + "ay")
+    console.log(newString)
   }
 
 
